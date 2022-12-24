@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<meta charset="utf-8">
+<head>
+	<title>CV Online</title>
+</head>
+<body>
+	<h1>Crie o Seu PDF aqui!</h1>
+	<h2>Preencha todos campos</h2>
+	<form id="form">
+		Apelido: <input type="text" id="text" placeholder="Apelido"><br><br>
+		Primeiro Nome: <input type="text" id="text" placeholder="Apelido"><br><br>
+		Data de Nascimento: <input type="text" id="text" placeholder="Apelido"><br><br>
+		<button id="button">Gerar PDF</button>
+	</form>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+	<script >
+		var form = document.getElementById('form')
+		form.addEventListener('submit', function(event){
+			event.preventDefault()
+
+			var text = document.getElementById('text').value
+			var doc = new jsPDF()
+				doc.setFontSize(15)
+				doc.text(text, 20, 20) 
+			
+				doc.save('a4.pdf')
+
+		})
+
+			
+	</script>
+
+</body>
+</html>
