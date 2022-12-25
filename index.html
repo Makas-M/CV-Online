@@ -9,9 +9,11 @@
 		section{text-align: center;}
 		#maintable{width: 100%; text-align: start; margin: auto 0%}
 		.mitable{width: 100%; padding: 10px}
-		.mitable thead{background-color: gray;}
+		.mitable thead{background-color: gray; font-size: 30px}
 		.mitable tfoot{background-color: antiquewhite;}
+		.mitable tbody td {font-size: 20px;}
 		.mitable tbody td input{
+			
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
@@ -36,7 +38,7 @@
 						
 						<td>Apelido</td>
 						<td><input type="text" name="apelido" placeholder="Digite seu apelido aqui"></td>
-					</tr>
+					</tr><br>
 					<tr>
 						
 						<td>Nome</td>
@@ -50,7 +52,7 @@
 					<tr>
 						
 						<td>Filiação</td>
-						<td><input type="text" name="filiacao" placeholder="Pai e Mãe"></td>
+						<td><input type="text" name="filiacao" placeholder="Pai e Mãe" size="50" maxlength="50"></td>
 					</tr>
 					<tr>
 						
@@ -95,6 +97,7 @@
 						},
 						callback: function(doc){
 							doc.output('dataurlnewwindow', {filename: 'cv.pdf'});
+							
 						}
 					});
 			} else{
@@ -107,6 +110,7 @@
 						},
 						callback: function(doc){
 							doc.output('dataurlnewwindow', {filename: 'cv.pdf'});
+
 						}
 					});
 
