@@ -4,9 +4,4 @@ section{text-align: center;}
 		.mitable{width: 100%; padding: 10px}
 		.mitable thead{background-color: gray; font-size: 30px}
 		.mitable tbody td {font-size: 20px;}
-		.mitable tbody td input{
-			
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-} 
+		.mitable tbody td input{box-shadow: 0 0 0 0; border: 0 none; outline: 0; font-size: 20px} 
