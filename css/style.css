@@ -1,6 +1,12 @@
-section{text-align: center; font-family: 'EB Garamond';font-size: 22px;}
+/*area de impressao*/
+section{
+	text-align: center; 
+	font-family: 'EB Garamond';	
+}
 
-#maintable{width: 80%; text-align: start; margin: 20px auto}
+
+
+#maintable{width: 100%; text-align: start; margin: 20px auto}
 
 /*titulo do documento*/
 #maintable .header {
@@ -13,8 +19,8 @@ section{text-align: center; font-family: 'EB Garamond';font-size: 22px;}
 }
 /*imagem do usuario*/
 #maintable .header img{
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;	
 	position: absolute;
 	top: 5px;
@@ -24,24 +30,32 @@ section{text-align: center; font-family: 'EB Garamond';font-size: 22px;}
 	cursor: pointer;
 	transition: 0.5s;
 	user-select: none;
-	filter: grayscale(100%);
 }
 
-#maintable .header img:hover{
-	filter: grayscale(0%);
-	transform: scale(1.05);
-}
+/* faz com que o botao do input nao seja visivel*/
+
+#maintable .header input{display: none;}
+
 /*Curriculum Vitae*/
 #maintable h1 {
-	font-size: 50px;
+	font-size: 80px;
 	width: 60%;
 	margin-left: auto;
 }
 		
 .mitable{width: 100%; padding: 10px}
 
-.mitable thead{background-color: rgba(255,2,2,0.1);} font-size: 30px}
+.mitable thead tr th{
+	background-color: rgba(2,2,255,0.1);
+	font-size: 35px;
+} 
 
-.mitable tbody td {font-size: 20px;}
+.mitable tbody td {font-size: 35px;}
 
-.mitable tbody td input{box-shadow: 0 0 0 0; border: 0 none; outline: 0; font-size: 20px} 
+.mitable tbody td input{
+	box-shadow: 0 0 0 0; 
+	border: 0 none; 
+	outline: 0; 
+	font-size: 35px
+} 
+
