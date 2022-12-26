@@ -31,7 +31,10 @@ section{
 	transition: 0.5s;
 	user-select: none;
 }
-
+#maintable .header img:hover{
+	box-shadow: 3px 3px  20px blue;
+	
+}
 /* faz com que o botao do input nao seja visivel*/
 
 #maintable .header input{display: none;}
@@ -58,4 +61,23 @@ section{
 	outline: 0; 
 	font-size: 35px
 } 
+/*estilo do botao de abrir dpf*/
+button {
+	text-align: center;
+	background: #B9DFFF;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+
+button:hover {
+	background: #016ABC;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
 

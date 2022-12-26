@@ -17,16 +17,11 @@ file.addEventListener('change', (event)=>{
 ler.readAsDataURL(file.files[0]);
 })
 
-//funcionalidade para quando o usuario clicar o botao de baixar pdf 
+//funcionalidade para quando o usuario clicar o botao de Visualizar CV
 pdfout.onclick = function () {
 
-
-
-
-
-
     var doc = new jsPDF('p', 'pt', 'A4');
-    
+   
     var margin = 40;
     var scale = (doc.internal.pageSize.width - margin * 2) / document.body.clientWidth;
     var scale_mobile = (doc.internal.pageSize.width - margin * 2) / document.body.getBoundingClientRect();
