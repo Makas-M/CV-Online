@@ -1,43 +1,53 @@
 /*area de impressao*/
-section{
-	text-align: center; 
-	font-family: 'EB Garamond';	
+section {
+	text-align: left;
+	font-family: 'EB Garamond';
 }
 
 
 
-#maintable{width: 100%; text-align: start; margin: 20px auto}
+#maintable {
+	width: 100%;
+	text-align: start;
+	margin: 20px auto;
+
+}
 
 /*titulo do documento*/
 #maintable .header {
-	width: 100%; 
-	height: 150px; 
-	background-color: rgba(2,2,255,0.1);
+	width: 100%;
+	height: 150px;
+	background-color: rgba(2, 2, 255, 0.1);
 	display: flex;
 	align-items: center;
 	position: relative;
 }
+
 /*imagem do usuario*/
-#maintable .header img{
+#maintable .header img {
 	width: 200px;
 	height: 200px;
-	border-radius: 50%;	
+	border-radius: 50%;
 	position: absolute;
 	top: 5px;
 	left: 60px;
 	border: 5px solid white;
-	box-shadow: 3px 3px  10px gray;
+	box-shadow: 3px 3px 10px gray;
 	cursor: pointer;
 	transition: 0.5s;
 	user-select: none;
 }
-#maintable .header img:hover{
-	box-shadow: 3px 3px  20px blue;
-	
+
+#maintable .header img:hover {
+	box-shadow: 3px 3px 20px blue;
+
 }
+
 /* faz com que o botao do input nao seja visivel*/
 
-#maintable .header input{display: none;}
+#maintable .header input {
+	display: none;
+}
 
 /*Curriculum Vitae*/
 #maintable h1 {
@@ -45,22 +55,31 @@ section{
 	width: 60%;
 	margin-left: auto;
 }
-		
-.mitable{width: 100%; padding: 10px}
 
-.mitable thead tr th{
-	background-color: rgba(2,2,255,0.1);
+.mitable {
+	width: 100%;
+	padding: 10px;
+}
+
+.mitable thead tr th {
+	background-color: rgba(2, 2, 255, 0.1);
 	font-size: 35px;
-} 
 
-.mitable tbody td {font-size: 35px;}
+}
 
-.mitable tbody td input{
-	box-shadow: 0 0 0 0; 
-	border: 0 none; 
-	outline: 0; 
-	font-size: 35px
-} 
+.mitable tbody td {
+	font-size: 35px;
+}
+
+.mitable tbody td input {
+
+	box-shadow: 0 0 0 0;
+	border: 0 none;
+	outline: 0;
+	font-size: 35px;
+
+}
+
 /*estilo do botao de abrir dpf*/
 button {
 	text-align: center;
@@ -80,4 +99,3 @@ button:hover {
 	box-shadow: 5px 5px 5px #eee;
 	text-shadow: none;
 }
-

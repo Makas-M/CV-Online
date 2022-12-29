@@ -20,17 +20,17 @@
 		<div id="maintable">
 			<div class="header">
 				<img src="image/avatar.jpg" alt="Selecione uma Imagem" id="imgFoto">
-				<input id="flFoto" type="file" name="flFoto" accept="image/*"> 
+				<input id="flFoto" type="file" name="flFoto" accept="image/*">
 
 				<h1><b>Curriculum Vitae<b></h1>
 			</div><br><br>
+			</tr>
 			<table class="mitable">
 				<thead>
 					<tr>
 
 						<th>1. Dados Pessoais</th>
 						<th></th>
-					</tr>
 				</thead>
 				<tbody>
 					<tr>
@@ -38,7 +38,8 @@
 						<td>
 							<li>Apelido</li>
 						</td>
-						<td><input type="text" name="apelido" placeholder="Digite seu apelido aqui"></td>
+						<td><input type="text" name="apelido" placeholder="Digite seu apelido aqui">
+						</td>
 					</tr><br>
 					<tr>
 
@@ -52,7 +53,8 @@
 						<td>
 							<li>Data de Nascimento</li>
 						</td>
-						<td><input type="date" name="dataNascimento" placeholder="Digite sua data de Nascimento"></td>
+						<td><input type="date" name="dataNascimento" placeholder="Digite sua data de Nascimento">
+						</td>
 					</tr>
 					<tr>
 
@@ -107,22 +109,278 @@
 			</table><br>
 
 		</div>
-		<div>
-			
-		</div>
+
 	</section>
 
-	<button id="pdfout" style="width: 90; height: 50">Visualizar CV</button>
 
-	<!-- importar o jsPDF responsavel pela conversao do pdf -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
-		integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
-		crossorigin="anonymous"></script>
-	<!-- importar o canvas responsavel pelo dimensionamento  e abertura do pdf -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
-		integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="js/script.js"></script>
+
+	<section>
+		<div id="maintable">
+
+
+
+
+			<table class="mitable">
+				<thead>
+					<tr>
+
+						<th>2.Formacao academica</th>
+						<th></th>
+				</thead>
+				<tbody>
+					<tr>
+
+						<td>
+							<li>Local de Formacao</li>
+						</td>
+						<td><input type="text" name="local_formacao" placeholder="Digite o local de formacao"></td>
+					</tr><br>
+					<tr>
+
+						<td>
+							<li>Ano de Formacao</li>
+						</td>
+						<td><input type="text" name="Ano_formacao" placeholder="Digite o ano de formacao"></td>
+					</tr>
+					<tr>
+
+
+
+
+					</tr>
+				</tbody>
+			</table><br>
+
+		</div>
+
+	</section>
+	<section>
+		<div id="maintable">
+
+			</tr>
+			<table class="mitable">
+				<thead>
+					<tr>
+
+						<th>3. Formacao Profissional</th>
+						<th></th>
+				</thead>
+				<tbody>
+
+
+					<td>
+						<li>Ano de Formacao</li>
+					</td>
+					<td><input type="text" name="Ano_formacao" placeholder="Digite o ano de formacao"></td>
+					</tr>
+					<tr>
+
+
+
+
+						<td>
+							<li>Curso</li>
+						</td>
+						<td><input type="text" name="Curso" placeholder="Digite o curso"></td>
+
+
+					</tr>
+					<tr>
+
+						<td>
+							<li>Local de Formacao</li>
+						</td>
+						<td><input type="text" name="local_formacao" placeholder="Digite o local de formacao"></td>
+					</tr><br>
+
+				</tbody>
+			</table><br>
+
+		</div>
+
+	</section>
+	<section>
+		<div id="maintable">
+
+			</tr>
+			<table class="mitable">
+				<thead>
+					<tr>
+
+						<th>4. Experiencia Profissional</th>
+						<th></th>
+				</thead>
+				<tbody>
+
+
+					<td>
+						<li>Local onde trabalhou</li>
+					</td>
+					<td><input type="text" name="local_onde_trabalhou" placeholder="Digite o local de trabalho"></td>
+					</tr>
+					<tr>
+
+
+
+
+						<td>
+							<li>Cargo</li>
+						</td>
+						<td><input type="text" name="Cargo" placeholder="Digite o cargo que ocupava"></td>
+
+
+					</tr>
+
+
+				</tbody>
+			</table><br>
+
+		</div>
+
+	</section>
+	<section>
+		<div id="maintable">
+
+
+			<table class="mitable">
+				<thead>
+					<tr>
+
+						<th>5.Idiomas</th>
+						<th></th>
+				</thead><br><br>
+				<tbody>
+
+
+					<td>
+						<table width="100%" border="1">
+							<tr>
+								<th>Linguas</th>
+								<th>Fala</th>
+								<th>escrita</th>
+								<th>compreensao</th>
+							</tr>
+							<tr>
+								<td><input type="text" placeholder="Digite a Lingua"></td>
+
+								<td><input type="text" placeholder="Nivel deFala"></td>
+								<td><input type="text" placeholder="Nivel de Escrita"></td>
+								<td><input type="text" placeholder="Nivel de Coompreensao"></td>
+							</tr>
+							<tr>
+								<td><input type="text" placeholder="Digite a Lingua"></td>
+
+								<td><input type="text" placeholder="Nivel de Fala"></td>
+								<td><input type="text" placeholder="Nivel de Escrita"></td>
+								<td><input type="text" placeholder="Nivel de Coompreensao"></td>
+							</tr>
+							<tr>
+								<td><input type="text" placeholder="Digite a Lingua"></td>
+
+								<td><input type="text" placeholder="Nivel de Fala"></td>
+								<td><input type="text" placeholder="NIvel de Escrita"></td>
+								<td><input type="text" placeholder="Nivel de Compreensao"></td>
+							</tr>
+						</table>
+					</td>
+
+					</tr>
+
+				</tbody>
+			</table><br>
+
+		</div>
+
+	</section>
+	<section>
+		<div id="maintable">
+
+			</tr>
+			<table class="mitable">
+				<thead>
+					<tr>
+
+
+
+						<section>
+							<div id="maintable">
+
+
+								<table class="mitable">
+									<thead>
+										<tr>
+
+											<th>6. Aptidao e competencias pessoais</th>
+											<th></th>
+									</thead>
+									<tbody>
+
+
+										<td>
+											<li>competencias Pessoais</li>
+										</td>
+										<td><input type="text" name="Ano_formacao"
+												placeholder="Digite a sua competencia"></td>
+					</tr>
+
+					</tbody>
+			</table><br>
+
+		</div>
+
+	</section>
+	<section>
+		<div id="maintable">
+
+			</tr>
+			<table class="mitable">
+				<thead>
+					<tr>
+
+						<th>7. Contacto</th>
+						<th></th>
+				</thead>
+				<tbody>
+
+
+					<td>
+						<li>Contacto pessoal</li>
+					</td>
+					<td><input type="text" name="Contacto_pessoal" placeholder="Digite o contacto pessoal"></td>
+					</tr>
+
+
+					<td>
+						<li>Contacto Alternativo</li>
+					</td>
+					<td><input type="text" name="Contacto_Alternativo" placeholder="Digite o Contacto Alternativo"></td>
+					</tr><br>
+
+				</tbody>
+			</table><br>
+
+		</div>
+
+	</section>
+	<section>
+		<div id="maintable">
+
+			</tr>
+
+
+
+
+			<button id="pdfout" style="width: 90; height: 50">Visualizar CV</button>
+
+			<!-- importar o jsPDF responsavel pela conversao do pdf -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+				integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+				crossorigin="anonymous"></script>
+			<!-- importar o canvas responsavel pelo dimensionamento  e abertura do pdf -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+				integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+				crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+			<script src="js/script.js"></script>
 
 </body>
 
